@@ -1,12 +1,12 @@
 import React from "react";
 import CategoryButton from "../components/CategoryButton";
-import ReactLogo from "../assets/react.svg";
+import MuseumImg from "../assets/museum.jpg";
 
 function WelcomePage() {
   return (
     <div>
       <h1>Welcome to Wander</h1>
-      <CategoryButton imageSrc={ReactLogo} text="Nature" />
+      <CategoryButton imageSrc={MuseumImg} text="Museums" />
     </div>
   );
 }
