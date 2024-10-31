@@ -5,6 +5,7 @@ import BackButton from "../components/BackButton";
 import { useNavigate } from "react-router-dom";
 import ClearableInput from "../components/ClearableInput";
 import RangeSlider from "../components/RangeSlider";
+import Checkable from "../components/Checkable";
 
 function TripInitPage() {
     const navigate = useNavigate();
@@ -21,6 +22,8 @@ function TripInitPage() {
                 <ClearableInput placeholder="Search for a city" />
                 <div className="text-2xl font-bold my-6">What is your budget?</div>
                 <RangeSlider minValue="0" maxValue="3000"/>
+                <div className="text-2xl font-bold my-6">How would you like to get around?</div>
+                <Checkable text="Uber"/>
             </div>
             <div className="fixed bottom-4 w-96 flex justify-between">
                 <BackButton text="Back" onClick={handleBack} width="32" height="12" />
