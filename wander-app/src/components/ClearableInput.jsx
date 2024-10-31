@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ClearIcon from '@mui/icons-material/Clear';
 
 function ClearableInput({ placeholder }) {
   const [inputValue, setInputValue] = useState('');
@@ -18,7 +19,7 @@ function ClearableInput({ placeholder }) {
         onClick={handleClear}
         className="absolute inset-y-0 right-2 text-gray-500 hover:text-gray-700 focus:outline-none"
     >
-        &times;
+        <ClearIcon />
     </button>
     </div>
   );
