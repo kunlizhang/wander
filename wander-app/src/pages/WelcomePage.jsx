@@ -4,6 +4,7 @@ import PrimaryButton from "../components/PrimaryButton";
 import CategoryGrid from "../components/CategoryGrid";
 import { useNavigate } from "react-router-dom"; 
 import categories from "../backend/categories.json";
+import OtherButton from "../components/OtherButton";
 
 function WelcomePage() {
     const navigate = useNavigate();

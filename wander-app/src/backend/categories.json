@@ -34,5 +34,29 @@
     {
         "name": "Hiking",
         "image": "assets/hiking.jpg"
+    },
+    {
+        "name": "Theatre",
+        "image": "assets/theatre.jpg"
+    },
+    {
+        "name": "Markets",
+        "image": "assets/markets.jpg"
+    },
+    {
+        "name": "Art",
+        "image": "assets/art.jpg"
+    },
+    {
+        "name": "Aquariums",
+        "image": "assets/aquarium.jpg"
+    },
+    {
+        "name": "Concerts",
+        "image": "assets/concerts.jpg"
+    },
+    {
+        "name": "Parks",
+        "image": "assets/parks.jpg"
     }
 ]
