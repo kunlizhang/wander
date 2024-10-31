@@ -12,7 +12,7 @@ export default {
         secondaryTeal: '#788FCE',
         secondaryOrange: '#FA9161',
         neutralBlack: '#0C0C20',
-        neutralWhite: 'FAFFFD'
+        neutralWhite: '#FAFFFD'
       },
       boxShadow: {
         'orange-category': '5px 5px 1px rgba(250,145,97,1)',
