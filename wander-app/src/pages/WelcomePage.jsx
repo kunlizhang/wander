@@ -11,7 +11,7 @@ function WelcomePage() {
         navigate("/trip");
     }
     return (
-        <div className="flex justify-center w-full min-h-screen">
+        <div className="flex justify-center w-full h-full">
             <div className="w-96">
                 <div className="text-4xl font-bold mb-12">Hi Jimmy!</div>
                 <ProgressBar brightCount={1} />
