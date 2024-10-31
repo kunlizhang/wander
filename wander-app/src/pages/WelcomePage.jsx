@@ -13,7 +13,7 @@ function WelcomePage() {
     return (
         <div className="flex justify-center w-full min-h-screen">
             <div className="w-96">
-                <div className="text-4xl font-bold mb-8">Hi Jimmy!</div>
+                <div className="text-4xl font-bold mb-12">Hi Jimmy!</div>
                 <ProgressBar brightCount={1} />
                 <div className="text-2xl font-bold mt-6">What do you enjoy doing?</div>
                 <div className="mt-4"></div>
