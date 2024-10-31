@@ -23,7 +23,7 @@ function TripInitPage() {
                 <div className="text-2xl font-bold my-6">What is your budget?</div>
                 <RangeSlider minValue="0" maxValue="3000"/>
                 <div className="text-2xl font-bold my-6">How would you like to get around?</div>
-                <Checkable text="Uber"/>
+                <Checkable text="Uber" width="32" height="10"/>
             </div>
             <div className="fixed bottom-4 w-96 flex justify-between">
                 <BackButton text="Back" onClick={handleBack} width="32" height="12" />
