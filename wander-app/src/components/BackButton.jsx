@@ -1,8 +1,8 @@
 import React from "react";
 
-function PrimaryButton({ text, onClick, width, height}) {
+function BackButton({ text, onClick, width, height}) {
     return (
-        <button className={`bg-primaryGreen2 text-neutralWhite font-semibold 
+        <button className={`outline outline-2 outline-gray-100 text-neutralBlack font-semibold 
             rounded-lg py-2 px-4 w-${width} h-${height}`
             } onClick={onClick}>
         {text}
@@ -10,4 +10,4 @@ function PrimaryButton({ text, onClick, width, height}) {
     );
     }
 
-export default PrimaryButton;
+export default BackButton;

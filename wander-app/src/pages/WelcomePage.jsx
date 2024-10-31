@@ -1,24 +1,29 @@
 import React from "react";
-import CategoryButton from "../components/CategoryButton";
 import ProgressBar from "../components/ProgressBar";
 import PrimaryButton from "../components/PrimaryButton";
 import CategoryGrid from "../components/CategoryGrid";
+import { useNavigate } from "react-router-dom"; 
 import categories from "../backend/categories.json";
 
 function WelcomePage() {
-  return (
-    <div className="flex justify-center w-full min-h-screen">
-        <div className="w-96">
-            <div className="text-4xl font-bold mb-8">Hi Jimmy!</div>
-            <ProgressBar brightCount={1} />
-            <div className="text-2xl font-bold mt-6">What do you enjoy doing?</div>
-            <div className="mt-4"></div>
-            <CategoryGrid categories={categories} />
-            <div className="mt-4"></div>
-            <PrimaryButton text="Next" onClick={() => {}} width="96" height="12" />
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/trip");
+    }
+    return (
+        <div className="flex justify-center w-full min-h-screen">
+            <div className="w-96">
+                <div className="text-4xl font-bold mb-8">Hi Jimmy!</div>
+                <ProgressBar brightCount={1} />
+                <div className="text-2xl font-bold mt-6">What do you enjoy doing?</div>
+                <div className="mt-4"></div>
+                <CategoryGrid categories={categories} />
+                <div className="mt-4"></div>
+            </div>
+            <div className="fixed bottom-4 w-96 flex justify-center">
+                <PrimaryButton text="Next" onClick={handleClick} width="96" height="12" />
+            </div>
         </div>
-    </div>
-    
   );
 }
 
