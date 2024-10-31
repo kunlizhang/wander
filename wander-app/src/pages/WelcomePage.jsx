@@ -7,7 +7,7 @@ import categories from "../backend/categories.json";
 
 function WelcomePage() {
   return (
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full min-h-screen">
         <div className="w-96">
             <div className="text-4xl font-bold mb-8">Hi Jimmy!</div>
             <ProgressBar brightCount={1} />
@@ -15,7 +15,7 @@ function WelcomePage() {
             <div className="mt-4"></div>
             <CategoryGrid categories={categories} />
             <div className="mt-4"></div>
-            <PrimaryButton text="Next" onClick={() => {}} width="full" height="12" />
+            <PrimaryButton text="Next" onClick={() => {}} width="96" height="12" />
         </div>
     </div>
     

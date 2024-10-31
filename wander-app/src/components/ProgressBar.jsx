@@ -4,7 +4,7 @@ function ProgressBar({ brightCount }) {
   const bars = [0, 1, 2]; // Represent the three bars
 
   return (
-    <div className="flex space-x-1">
+    <div className="flex space-x-3">
       {bars.map((index) => (
         <div
           key={index}
