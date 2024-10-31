@@ -10,7 +10,7 @@ function CategoryButton({ imageSrc, text }) {
   return (
     <button
       onClick={handleClick}
-      className={`relative w-32 h-24 rounded-xl overflow-hidden transition-all duration-200 ${
+      className={`relative w-28 h-20 rounded-xl overflow-hidden transition-all duration-200 ${
         isClicked ? 'shadow-orange-category' : 'shadow-none'
       }`}
       >

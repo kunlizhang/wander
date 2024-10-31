@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Bars",
+        "image": "assets/bars.jpg"
+    },
+    {
+        "name": "Beaches",
+        "image": "assets/beaches.jpg"
+    },
+    {
+        "name": "Brunch",
+        "image": "assets/brunch.jpg"
+    },
+    {
+        "name": "Cafes",
+        "image": "assets/cafe.jpeg"
+    },
+    {
+        "name": "Sports",
+        "image": "assets/football.jpg"
+    },
+    {
+        "name": "Museums",
+        "image": "assets/museum.jpg"
+    },
+    {
+        "name": "Shopping",
+        "image": "assets/shopping.jpg"
+    },
+    {
+        "name": "Watersport",
+        "image": "assets/watersport.jpg"
+    },
+    {
+        "name": "Hiking",
+        "image": "assets/hiking.jpg"
+    }
+]
