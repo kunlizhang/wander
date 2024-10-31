@@ -20,7 +20,7 @@ function TripInitPage() {
                 <div className="text-2xl font-bold my-6">Where do you want to explore?</div>
                 <ClearableInput placeholder="Search for a city" />
                 <div className="text-2xl font-bold my-6">What is your budget?</div>
-                <RangeSlider />
+                <RangeSlider minValue="0" maxValue="3000"/>
             </div>
             <div className="fixed bottom-4 w-96 flex justify-between">
                 <BackButton text="Back" onClick={handleBack} width="32" height="12" />
