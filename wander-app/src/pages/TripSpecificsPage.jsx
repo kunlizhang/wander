@@ -10,6 +10,7 @@ import transportModes from "../backend/transportation-options.json";
 import { Checkbox } from "@mui/material";
 import CheckableGrid from "../components/CheckableGrid";
 import DateTimePicker from "../components/DateTimePicker";
+import CustomWants from "../components/CustomWants";
 
 function TripInitPage() {
     const navigate = useNavigate();
@@ -28,7 +29,7 @@ function TripInitPage() {
                 <div className="text-md mt-2">To</div>
                 <DateTimePicker />
                 <div className="text-2xl font-bold my-4">What do you want to do?</div>
-                <ClearableInput placeholder="ex. Space Needle" />
+                <CustomWants />
             </div>
             <div className="fixed bottom-4 w-96 flex justify-between">
                 <BackButton text="Back" onClick={handleBack} width="32" height="12" />
