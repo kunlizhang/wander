@@ -6,6 +6,7 @@ function CategoryGrid({ categories }) {
         <div className="grid grid-cols-3 gap-3">
             {categories.map(category => (
                 <CategoryButton
+                key={category.name}
                 imageSrc={category.image} // Dynamically require each image
                 text={category.name}
                 />
