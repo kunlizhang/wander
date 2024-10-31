@@ -3,6 +3,7 @@ import './App.css'
 import ExamplePage from './pages/ExamplePage';
 import WelcomePage from './pages/WelcomePage';
 import TripInitPage from './pages/TripInitPage';
+import TripSpecificsPage from './pages/TripSpecificsPage';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<WelcomePage/>} />
           <Route path="/example" element={<ExamplePage/>} />
           <Route path="/trip" element={<TripInitPage/>} />
+          <Route path="/tripPlan" element={<TripSpecificsPage/>} />
         </Routes>
       </Router>
     </>
