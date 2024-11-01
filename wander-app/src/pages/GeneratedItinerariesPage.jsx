@@ -1,5 +1,6 @@
 import React from "react";
 import SwipeCarouselIndicator from "../components/SwipeCarouselIndicator";
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 function GeneratedItinerariesPage() {
     return (
@@ -12,6 +13,11 @@ function GeneratedItinerariesPage() {
                     <SwipeCarouselIndicator barCount={4} brightCount={2}/>
                     <div className="mt-4"></div>
                     <div className="mt-4"></div>
+                    <div className="fixed bottom-4 w-96 flex justify-between">
+                        <button className="bg-primaryGreen2 text-neutralWhite font-bold rounded-full px-2 ml-8 mb-4 w-36 h-12">
+                            <TelegramIcon className="text-neutralWhite mr-3 mb-0.5" />
+                            Let's go!</button>
+                    </div>
                 </div>
             </div>
         </div>
