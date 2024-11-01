@@ -3,12 +3,6 @@ import ProgressBar from "../components/ProgressBar";
 import PrimaryButton from "../components/PrimaryButton";
 import BackButton from "../components/BackButton";
 import { useNavigate } from "react-router-dom";
-import ClearableInput from "../components/ClearableInput";
-import RangeSlider from "../components/RangeSlider";
-import Checkable from "../components/Checkable";
-import transportModes from "../backend/transportation-options.json";
-import { Checkbox } from "@mui/material";
-import CheckableGrid from "../components/CheckableGrid";
 import DateTimePicker from "../components/DateTimePicker";
 import CustomWants from "../components/CustomWants";
 
@@ -16,6 +10,9 @@ function TripInitPage() {
     const navigate = useNavigate();
     const handleBack = () => {
         navigate("/trip");
+    }
+    const handleGenerate = () => {
+        navigate("/generated");
     }
 
     return (
@@ -33,7 +30,7 @@ function TripInitPage() {
             </div>
             <div className="fixed bottom-4 w-96 flex justify-between">
                 <BackButton text="Back" onClick={handleBack} width="32" height="12" />
-                <PrimaryButton text="Generate Itinerary!" onClick={() => {}} width="48" height="12" />
+                <PrimaryButton text="Generate Itinerary!" onClick={handleGenerate} width="48" height="12" />
             </div>
         </div>
   );
