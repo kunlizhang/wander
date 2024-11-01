@@ -1,4 +1,5 @@
 import React from "react";
+import SwipeCarouselIndicator from "../components/SwipeCarouselIndicator";
 
 function GeneratedItinerariesPage() {
     return (
@@ -8,7 +9,7 @@ function GeneratedItinerariesPage() {
                 <div className="relative">
                     <div className="mt-20"></div>
                     <div className="text-4xl font-bold mb-12">Seattle</div>
-                    <div className="text-2xl font-bold mt-6">What do you enjoy doing?</div>
+                    <SwipeCarouselIndicator barCount={4} brightCount={2}/>
                     <div className="mt-4"></div>
                     <div className="mt-4"></div>
                 </div>
