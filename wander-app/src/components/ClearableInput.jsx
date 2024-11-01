@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import ClearIcon from '@mui/icons-material/Clear';
 
-function ClearableInput({ placeholder, keyDownEvent=() => {} }) {
+function ClearableInput({ placeholder, keyDownEvent=() => {}, clearAfterEnter=false }) {
     const inputRef = useRef(null);
 
     const [inputValue, setInputValue] = useState('');
@@ -11,6 +11,9 @@ function ClearableInput({ placeholder, keyDownEvent=() => {} }) {
         if (e.key === 'Enter') {
             event.target.blur();
             keyDownEvent(inputValue);
+        };
+        if (clearAfterEnter && e.key === 'Enter') {
+            setInputValue('');
         };
     };
 

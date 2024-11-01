@@ -19,7 +19,7 @@ function CustomWants() {
 
     return (
         <div className="w-full ">
-            <ClearableInput placeholder="ex. Space Needle" keyDownEvent={handleKeyDown}/>
+            <ClearableInput placeholder="ex. Space Needle" keyDownEvent={handleKeyDown} clearAfterEnter={true}/>
             <div className="mt-2"></div>
             <div className="flex flex-wrap gap-2 max-w-4xl mx-auto h-max max-h-48 overflow-y-auto">
                 {myWants.map((want, index) => (
