@@ -18,6 +18,7 @@ function TripInitPage() {
     return (
         <div className="flex justify-center w-full h-full">
             <div className="w-96">
+                <div className="mt-20"></div>
                 <div className="text-4xl font-bold mb-12">Let's plan your trip!</div>
                 <ProgressBar brightCount={3} />
                 <div className="text-2xl font-bold my-6">How long will you be in Seattle?</div>
