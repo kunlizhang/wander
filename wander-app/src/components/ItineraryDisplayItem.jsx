@@ -12,8 +12,12 @@ function ItineraryDisplayItem({ title, durationText, image, fans=[]}) {
             <div className="absolute inset-0 bg-black bg-opacity-60">
                 <div className="ml-4 mt-4 text-neutralWhite font-semibold text-sm">{durationText}</div>
                 <div className="ml-4 mb-4 text-neutralWhite font-bold text-lg">{title}</div>
-                <OverlappingProfilePictures images={["assets/bars.jpg", "assets/brunch.jpg"]} />
-                <div className="absolute bottom-2 ml-4 mb-4 text-neutralWhite text-xs">{fanText}</div>
+                <div className="absolute bottom-2 ml-4 mb-4 text-neutralWhite text-xs">
+                    <div className="flex">
+                        <OverlappingProfilePictures images={["assets/bars.jpg", "assets/brunch.jpg", "assets/parks.jpg"]} />
+                        <div className="ml-2 p-2">{fanText}</div>
+                    </div>
+                </div>
             </div>
         </div>
     );
