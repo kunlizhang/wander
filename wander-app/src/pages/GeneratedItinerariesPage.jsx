@@ -1,7 +1,8 @@
 import React from "react";
 import SwipeCarouselIndicator from "../components/SwipeCarouselIndicator";
 import TelegramIcon from '@mui/icons-material/Telegram';
-import ItineraryDisplayItem from "../components/ItineraryDisplayItem";
+import ItineraryDisplayCarousel from "../components/ItineraryDisplayCarousel";
+import seattleItinerary from "../backend/seattleItineraries.json";
 
 function GeneratedItinerariesPage() {
     return (
@@ -14,7 +15,7 @@ function GeneratedItinerariesPage() {
                     <SwipeCarouselIndicator barCount={4} brightCount={0}/>
                     <div className="mt-12"></div>
                     <div className="flex justify-center">
-                        <ItineraryDisplayItem title="Downtown Food Tour" durationText="2 hours" image="assets/cafe.jpeg" fans={["Kunli Zhang", "Sherry Xue", "Aashvi Manakiwala"]}/>
+                        <ItineraryDisplayCarousel items={seattleItinerary} index={0}/>
                     </div>
                     <div className="mt-4"></div>
                     <div className="fixed bottom-4 w-96 flex justify-between">

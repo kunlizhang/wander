@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Downtown Food Tour",
+        "durationText": "2 hours",
+        "image": "assets/shopping.jpg",
+        "fans": [
+            "Kunli Zhang",
+            "John Doe",
+            "Adam Smith"
+        ]
+    },
+    {
+        "title": "Seattle Art Tour",
+        "durationText": "2 hours",
+        "image": "assets/art.jpg",
+        "fans": [
+            "Kunli Zhang",
+            "John Doe",
+            "Adam Smith"
+        ]
+    }
+]
