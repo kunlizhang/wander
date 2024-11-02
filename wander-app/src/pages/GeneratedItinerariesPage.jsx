@@ -1,6 +1,7 @@
 import React from "react";
 import SwipeCarouselIndicator from "../components/SwipeCarouselIndicator";
 import TelegramIcon from '@mui/icons-material/Telegram';
+import ItineraryDisplayItem from "../components/ItineraryDisplayItem";
 
 function GeneratedItinerariesPage() {
     return (
@@ -10,8 +11,11 @@ function GeneratedItinerariesPage() {
                 <div className="relative">
                     <div className="mt-20"></div>
                     <div className="text-4xl font-bold mb-12">Seattle</div>
-                    <SwipeCarouselIndicator barCount={4} brightCount={2}/>
-                    <div className="mt-4"></div>
+                    <SwipeCarouselIndicator barCount={4} brightCount={0}/>
+                    <div className="mt-12"></div>
+                    <div className="flex justify-center">
+                        <ItineraryDisplayItem title="Downtown Food Tour" durationText="2 hours" image="assets/cafe.jpeg" fans={["Kunli Zhang", "Sherry Xue", "Aashvi Manakiwala"]}/>
+                    </div>
                     <div className="mt-4"></div>
                     <div className="fixed bottom-4 w-96 flex justify-between">
                         <button className="bg-primaryGreen2 text-neutralWhite font-bold rounded-full px-2 ml-8 mb-4 w-36 h-12">
