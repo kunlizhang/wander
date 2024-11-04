@@ -14,7 +14,7 @@ function GeneratedItinerariesPage() {
                 <div className="relative">
                     <div className="mt-20"></div>
                     <div className="text-4xl font-bold mb-12">Seattle</div>
-                    <SwipeCarouselIndicator barCount={4} brightCount={currentIndex}/>
+                    <SwipeCarouselIndicator barCount={seattleItinerary.length} brightCount={currentIndex}/>
                     <div className="mt-12"></div>
                     <div className="flex justify-center">
                         <ItineraryDisplayCarousel items={seattleItinerary} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
