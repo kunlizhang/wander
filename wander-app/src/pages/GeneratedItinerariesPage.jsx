@@ -5,6 +5,8 @@ import ItineraryDisplayCarousel from "../components/ItineraryDisplayCarousel";
 import seattleItinerary from "../backend/seattleItineraries.json";
 
 function GeneratedItinerariesPage() {
+    const [currentIndex, setCurrentIndex] = React.useState(0);
+
     return (
         <div className="flex justify-center w-full h-full ">
             <div className="relative w-96 h-screen bg-cover bg-center bg-[url('assets/downtownTripBackground.png')]">
@@ -12,10 +14,10 @@ function GeneratedItinerariesPage() {
                 <div className="relative">
                     <div className="mt-20"></div>
                     <div className="text-4xl font-bold mb-12">Seattle</div>
-                    <SwipeCarouselIndicator barCount={4} brightCount={0}/>
+                    <SwipeCarouselIndicator barCount={4} brightCount={currentIndex}/>
                     <div className="mt-12"></div>
                     <div className="flex justify-center">
-                        <ItineraryDisplayCarousel items={seattleItinerary} index={0}/>
+                        <ItineraryDisplayCarousel items={seattleItinerary} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
                     </div>
                     <div className="mt-4"></div>
                     <div className="fixed bottom-4 w-96 flex justify-between">

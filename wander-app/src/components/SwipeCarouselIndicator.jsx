@@ -10,7 +10,7 @@ function SwipeCarouselIndicator({ barCount, brightCount }) {
             key={index}
             className={`h-2 rounded bg-primaryGreen2 ${
                 index == brightCount ? 'opacity-100 w-8' : 'opacity-40 w-4'
-            } transition-opacity transition-transform duration-200`}
+            } transition-all duration-400`}
             />
         ))}
         </div>
