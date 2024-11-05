@@ -6,7 +6,8 @@
         "fans": [
             "Kunli Zhang",
             "John Doe",
-            "Adam Smith"
+            "Adam Smith",
+            "Jacky Chan"
         ]
     },
     {
@@ -26,6 +27,9 @@
         "fans": [
             "Sherry Xue",
             "Hilary Lim",
+            "Another Dude",
+            "Sherry Xue",
+            "Hilary Lim",
             "Another Dude"
         ]
     },
@@ -34,8 +38,8 @@
         "durationText": "2 hours",
         "image": "assets/museum.jpg",
         "fans": [
-            "Donald Trump",
-            "Bill Gates",
+            "Danaë Metaxa",
+            "Jeremy Lin",
             "Elon Musk"
         ]
     }
