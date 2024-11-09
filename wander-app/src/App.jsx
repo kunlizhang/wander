@@ -5,7 +5,9 @@ import WelcomePage from './pages/WelcomePage';
 import TripInitPage from './pages/TripInitPage';
 import TripSpecificsPage from './pages/TripSpecificsPage';
 import GeneratedItinerariesPage from './pages/GeneratedItinerariesPage';
-
+import ItineraryWalkthroughPage from './pages/ItineraryWalkthroughPage';
+import SummaryItineraryPage from './pages/SummaryItineraryPage';
+import EditItineraryPage from './pages/EditItineraryPage';
 function App() {
 
   return (
@@ -17,6 +19,9 @@ function App() {
           <Route path="/trip" element={<TripInitPage/>} />
           <Route path="/tripPlan" element={<TripSpecificsPage/>} />
           <Route path="/generated" element={<GeneratedItinerariesPage/>} />
+          <Route path="/walkthrough" element={<ItineraryWalkthroughPage/>} />
+          <Route path="/summary" element={<SummaryItineraryPage/>} />
+          <Route path="/edit" element={<EditItineraryPage/>} />
         </Routes>
       </Router>
     </>
