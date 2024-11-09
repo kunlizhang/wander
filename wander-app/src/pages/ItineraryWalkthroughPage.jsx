@@ -29,7 +29,8 @@ function ItineraryWalkthroughPage() {
             <div className="relative w-96 h-screen">
                 {/* Map/Image Section */}
                 <div 
-                    className={currentStop.mapImage}
+                    className="h-2/3 bg-cover bg-center"
+                    style={{ backgroundImage: `url(${currentStop.mapImage})` }}
                 >
                     <div className="absolute inset-0 bg-gradient-to-t from-neutralWhite to-transparent"></div>
                     {/* Back Button */}
@@ -60,17 +61,31 @@ function ItineraryWalkthroughPage() {
                     {/* Duration Info */}
                     <div className="flex justify-between items-center">
                         <span className="text-gray-500">{currentStop.duration}</span>
-                        <button 
-                            className={`bg-green-600 rounded-full p-3 ${
-                                currentIndex === tourStops.length - 1 ? 'opacity-50' : ''
-                            }`}
-                            onClick={handleNext}
-                            disabled={currentIndex === tourStops.length - 1}
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                        </button>
+                        <div className="flex gap-3">
+                            {/* Back button - only shows if not on first stop */}
+                            {currentIndex > 0 && (
+                                <button 
+                                    className="bg-gray-200 rounded-full p-3"
+                                    onClick={() => setCurrentIndex(currentIndex - 1)}
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                            )}
+                            {/* Next button */}
+                            <button 
+                                className={`bg-green-600 rounded-full p-3 ${
+                                    currentIndex === tourStops.length - 1 ? 'opacity-50' : ''
+                                }`}
+                                onClick={handleNext}
+                                disabled={currentIndex === tourStops.length - 1}
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

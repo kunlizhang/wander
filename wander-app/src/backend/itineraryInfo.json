@@ -5,7 +5,7 @@
             "description": "Start your tour at Pike Place Market, one of Seattle's most famous attractions. Head to Beecher’s Handmade Cheese to watch the cheese-making process and grab a cup of their legendary mac and cheese. Just steps away, visit Piroshky Piroshky, a bakery serving Russian-style hand pies. Grab a savory beef and cheese or a sweet cinnamon cardamom roll for a taste of something unique. Their pastries are portable, making them great for a quick stop.",
             "duration": "Appetizer - 20 minutes",
             "image": "assets/itineraryForeground/pikeplacemarket.jpeg",
-            "mapImage": "h-2/3 bg-cover bg-center bg-[url('assets/itineraryBackground/pikeplacemarket.jpg')]",
+            "mapImage": "assets/itineraryBackground/pikeplacemarket.jpg",
             "tags": ["Quirky", "Local Gem"],
             "transport": {
                 "type": "walk",
@@ -13,14 +13,13 @@
             },
             "time": "5pm",
             "shortdescription":"One of the oldest public markets in the U.S. See the fish get thrown around at the classic fish market!"
-
         },
         {
             "name": "Etta's Seafood",
             "description": "From Pike Place, walk a few blocks to Etta’s Seafood for a quintessential Seattle seafood experience. Order the Dungeness crab cakes or fresh oysters to get a taste of the Pacific Northwest’s ocean bounty. Pair with a glass of local wine if you have time.",
             "duration": "Entree - 1 hour",
             "image": "assets/itineraryForeground/ettas-seafood.jpeg",
-            "mapImage": "h-2/3 bg-cover bg-center bg-[url('assets/itineraryBackground/ettas.png')]",
+            "mapImage": "assets/itineraryBackground/ettas.png",
        "tags": ["Quirky", "Local Gem"],
             "transport": {
                 "type": "walk",
@@ -36,7 +35,7 @@
             "description": "After dinner, walk over to the Seattle Gum Wall in Post Alley. This quirky, colorful wall covered in chewed gum is a fun photo op and a perfect way to wind down the tour.",
             "duration": "Sightseeing - 10 minutes",
             "image": "assets/itineraryForeground/gumwall.png",
-            "mapImage": "h-2/3 bg-cover bg-center bg-[url('assets/itineraryBackground/gumwall.png')]",
+            "mapImage": "assets/itineraryBackground/gumwall.png",
             "tags": ["Quirky", "Local Gem"],
             "transport": {
                 "type": "walk",
