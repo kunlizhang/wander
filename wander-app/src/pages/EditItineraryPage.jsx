@@ -38,6 +38,7 @@ function EditItineraryPage() {
     };
 
     return (
+        <div className="flex justify-center w-full h-full ">
         <div className="flex flex-col h-screen w-96 bg-white">
             {/* Header */}
             <div className="px-4 py-6 border-b">
@@ -121,6 +122,7 @@ function EditItineraryPage() {
                     Confirm
                 </button>
             </div>
+        </div>
         </div>
     );
 }

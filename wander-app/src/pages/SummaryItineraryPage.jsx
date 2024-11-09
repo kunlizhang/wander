@@ -29,6 +29,7 @@ function SummaryItineraryPage() {
     };
 
     return (
+        <div className="flex justify-center w-full h-full ">
         <div className="flex flex-col h-screen w-96 bg-white">
             {/* Header - unchanged */}
             <div className="px-4 py-6 border-b">
@@ -131,6 +132,7 @@ function SummaryItineraryPage() {
                     Save
                 </button>
             </div>
+        </div>
         </div>
     );
 }

@@ -25,26 +25,26 @@ function GeneratedItinerariesPage() {
                     <SwipeCarouselIndicator barCount={seattleItinerary.length} brightCount={currentIndex}/>
                     <div className="mt-12"></div>
                     <div className="flex justify-center">
-                    <button 
-                        onClick={handleEditClick}
-                        className="absolute top-4 right-4 z-10 p-2 bg-white rounded-full shadow-md"
-                    >
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            className="h-6 w-6" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke="currentColor"
+                        <button 
+                            onClick={handleEditClick}
+                            className="absolute top-4 right-4 z-10 p-2 bg-white rounded-full shadow-md"
                         >
-                            <path 
-                                strokeLinecap="round" 
-                                strokeLinejoin="round" 
-                                strokeWidth={2} 
-                                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                            />
-                        </svg>
-                    </button>
-                        <ItineraryDisplayCarousel items={seattleItinerary} index={0}/>
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                className="h-6 w-6" 
+                                fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke="currentColor"
+                            >
+                                <path 
+                                    strokeLinecap="round" 
+                                    strokeLinejoin="round" 
+                                    strokeWidth={2} 
+                                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                                />
+                            </svg>
+                        </button>
+                        <ItineraryDisplayCarousel items={seattleItinerary} currentIndex={0}/>
                     </div>
                     <div className="mt-4"></div>
                     <div className="fixed bottom-4 w-96 flex justify-between">
