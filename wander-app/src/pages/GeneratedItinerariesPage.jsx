@@ -6,6 +6,8 @@ import seattleItinerary from "../backend/seattleItineraries.json";
 import { useNavigate } from "react-router-dom";
 
 function GeneratedItinerariesPage() {
+    const [currentIndex, setCurrentIndex] = React.useState(0);
+
     const navigate = useNavigate();
     const handleNext = () => {
         navigate("/walkthrough");
@@ -20,7 +22,7 @@ function GeneratedItinerariesPage() {
                 <div className="relative">
                     <div className="mt-20"></div>
                     <div className="text-4xl font-bold mb-12">Seattle</div>
-                    <SwipeCarouselIndicator barCount={4} brightCount={0}/>
+                    <SwipeCarouselIndicator barCount={seattleItinerary.length} brightCount={currentIndex}/>
                     <div className="mt-12"></div>
                     <div className="flex justify-center">
                     <button 

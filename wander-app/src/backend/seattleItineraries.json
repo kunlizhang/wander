@@ -6,7 +6,8 @@
         "fans": [
             "Kunli Zhang",
             "John Doe",
-            "Adam Smith"
+            "Adam Smith",
+            "Jacky Chan"
         ]
     },
     {
@@ -14,9 +15,32 @@
         "durationText": "2 hours",
         "image": "assets/art.jpg",
         "fans": [
-            "Kunli Zhang",
-            "John Doe",
+            "Aashvi Manakiwala",
+            "Jerry Berry",
             "Adam Smith"
+        ]
+    },
+    {
+        "title": "Local Neighborhoods",
+        "durationText": "4 hours",
+        "image": "assets/markets.jpg",
+        "fans": [
+            "Sherry Xue",
+            "Hilary Lim",
+            "Another Dude",
+            "Sherry Xue",
+            "Hilary Lim",
+            "Another Dude"
+        ]
+    },
+    {
+        "title": "Luxury Shopping",
+        "durationText": "2 hours",
+        "image": "assets/museum.jpg",
+        "fans": [
+            "Danaë Metaxa",
+            "Jeremy Lin",
+            "Elon Musk"
         ]
     }
 ]
