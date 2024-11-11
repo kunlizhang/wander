@@ -23,7 +23,7 @@ function CustomWants() {
             <div className="mt-2"></div>
             <div className="flex flex-wrap gap-2 max-w-4xl mx-auto h-max max-h-48 overflow-y-auto">
                 {myWants.map((want, index) => (
-                    <Pill text={want} key={index} onClick={() => removeWant(index)} height="6"/>
+                    <Pill text={want} key={index} onClick={() => removeWant(index)} height="8"/>
                 ))}
             </div>
         </div>
