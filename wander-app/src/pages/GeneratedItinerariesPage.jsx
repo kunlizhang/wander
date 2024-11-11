@@ -44,7 +44,7 @@ function GeneratedItinerariesPage() {
                                 />
                             </svg>
                         </button>
-                        <ItineraryDisplayCarousel items={seattleItinerary} currentIndex={0}/>
+                        <ItineraryDisplayCarousel items={seattleItinerary} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
                     </div>
                     <div className="mt-4"></div>
                     <div className="fixed bottom-4 w-96 flex justify-between">
