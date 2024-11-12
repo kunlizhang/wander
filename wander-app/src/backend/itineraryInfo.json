@@ -6,13 +6,13 @@
             "duration": "Appetizer - 20 minutes",
             "image": "assets/itineraryForeground/pikeplacemarket.jpeg",
             "mapImage": "assets/itineraryBackground/pikeplacemarket.jpg",
-            "tags": ["Quirky", "Local Gem"],
+            "tags": ["Touristy", "Food"],
             "transport": {
                 "type": "walk",
                 "duration": "10 minute"
             },
             "time": "5pm",
-            "shortdescription":"One of the oldest public markets in the U.S. See the fish get thrown around at the classic fish market!"
+            "shortdescription":"Famous food market with a view of the water."
         },
         {
             "name": "Etta's Seafood",
@@ -20,14 +20,13 @@
             "duration": "Entree - 1 hour",
             "image": "assets/itineraryForeground/ettas-seafood.jpeg",
             "mapImage": "assets/itineraryBackground/ettas.png",
-       "tags": ["Quirky", "Local Gem"],
+       "tags": ["Ambiance", "Local Gem"],
             "transport": {
                 "type": "walk",
                 "duration": "10 minute"
             },
             "time": "5pm",
-            "shortdescription":"One of the oldest public markets in the U.S. See the fish get thrown around at the classic fish market!"
-
+            "shortdescription":"A seafood restaurant with a view of the water."
         
         },
         {
@@ -36,14 +35,75 @@
             "duration": "Sightseeing - 10 minutes",
             "image": "assets/itineraryForeground/gumwall.png",
             "mapImage": "assets/itineraryBackground/gumwall.png",
-            "tags": ["Quirky", "Local Gem"],
+            "tags": ["Quirky", "Photo Op"],
             "transport": {
                 "type": "walk",
                 "duration": "10 minute"
             },
             "time": "5pm",
-            "shortdescription":"One of the oldest public markets in the U.S. See the fish get thrown around at the classic fish market!"
+            "shortdescription":"Wall of chewed gum."
 
+        }
+    ],
+    "Seattle Art Tour": [
+        {
+            "name": "Seattle Art Museum",
+            "description": "The Seattle Art Museum is a must-visit for art lovers. The museum is home to a diverse collection of art, including works by local and international artists. The museum also hosts several special exhibitions throughout the year.",
+            "duration": "Sightseeing - 1 hour",
+            "image": "assets/itineraryForeground/seattleartmuseum.jpeg",
+            "mapImage": "assets/itineraryBackground/seattleartmuseum.jpeg",
+            "tags": ["Art", "Museum"],
+            "transport": {
+                "type": "walk",
+                "duration": "10 minute"
+            },
+            "time": "10am",
+            "shortdescription":"A diverse collection of art from local and international artists."
+        },
+        
+        {
+            "name": "Space Needle",
+            "description": "The Space Needle is a must-visit for art lovers. The museum is home to a diverse collection of art, including works by local and international artists. The museum also hosts several special exhibitions throughout the year.",
+            "duration": "Sightseeing - 1 hour",
+            "image": "assets/itineraryForeground/spaceneedle.jpeg",
+            "mapImage": "assets/itineraryBackground/spaceneedle.jpeg",
+            "tags": ["Art", "Museum"],
+            "transport": {
+                "type": "walk",
+                "duration": "10 minute"
+            },
+            "time": "1pm",
+            "shortdescription":"A view of the city from the top of the Space Needle."
+        },
+        {
+            "name": "Chihuly Glass Museum",
+            "description": "The Chihuly Glass Museum is a must-visit for art lovers. The museum is home to a diverse collection of art, including works by local and international artists. The museum also hosts several special exhibitions throughout the year.",
+            "duration": "Sightseeing - 1 hour",
+            "image": "assets/itineraryForeground/chihulyglassmuseum.jpeg",
+            "mapImage": "assets/itineraryBackground/chihulyglassmuseum.jpeg",
+            "tags": ["Art", "Museum"],
+            "transport": {
+                "type": "walk",
+                "duration": "10 minute"
+            },
+            "time": "3pm",
+            "shortdescription":"A diverse collection of glass art."
+        }
+    ],
+    "Local Neighborhoods": [
+        {
+            "name": "Gas Works Park",
+            "description": "Gas Works Park is a must-visit for art lovers. The museum is home to a diverse collection of art, including works by local and international artists. The museum also hosts several special exhibitions throughout the year.",
+            "duration": "Sightseeing - 1 hour",
+            "image": "assets/itineraryForeground/gasworkspark.jpeg",
+            "mapImage": "assets/itineraryBackground/gasworkspark.jpeg",
+            "tags": ["Art", "Museum"],
+            "transport": {
+                "type": "walk",
+                "duration": "10 minute"
+            },
+            "time": "5pm",
+            "shortdescription":"A view of the city from the top of the Space Needle."
         }
     ]
 }

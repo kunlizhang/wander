@@ -24,8 +24,8 @@ function SummaryItineraryPage() {
     // Assuming itineraryInfo is structured by days
     const dailyItineraries = {
         "Jan 1": itineraryInfo["Downtown Food Tour"],
-        "Jan 2": itineraryInfo["Downtown Food Tour"],
-        "Jan 3": itineraryInfo["Downtown Food Tour"]
+        "Jan 2": itineraryInfo["Seattle Art Tour"],
+        "Jan 3": itineraryInfo["Local Neighborhoods"]
     };
 
     return (

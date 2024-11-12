@@ -12,16 +12,20 @@ function EditItineraryPage() {
 
     const [items, setItems] = useState({
         "Jan 1": [
-            "Johnny's Big Breakfast Bonanza",
+            "Pike Place Market",
+            "Etta's Seafood",
+            "Gum Wall"
+        ],
+        "Jan 2": [
             "Seattle Art Museum",
-            "Criola",
             "Space Needle",
             "Chihuly Glass Museum",
+        ],
+        "Jan 3": [
+            "Gas Works Park",
             "Mako Sushi",
             "Pike Place Night Market"
-        ],
-        "Jan 2": [ /* your day 2 items */ ],
-        "Jan 3": [ /* your day 3 items */ ]
+        ]
     });
 
     const onDragEnd = (result) => {
