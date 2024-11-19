@@ -22,8 +22,8 @@ function WelcomePage() {
                 <CategoryGrid categories={categories} />
                 <div className="mt-4"></div>
             </div>
-            <div className="fixed bottom-4 w-96 flex justify-center">
-                <PrimaryButton text="Next" onClick={handleClick} width="96" height="12" />
+            <div className="fixed bottom-4 w-96 flex justify-end">
+                <PrimaryButton text="Next" onClick={handleClick} />
             </div>
         </div>
   );

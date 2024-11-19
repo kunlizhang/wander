@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import itineraryInfo from "../backend/itineraryInfo.json";
+import PrimaryButton from "../components/PrimaryButton";
+import BackButton from "../components/BackButton";
 
 function SummaryItineraryPage() {
     const navigate = useNavigate();
@@ -76,14 +78,14 @@ function SummaryItineraryPage() {
                         {/* Timeline Items */}
                         {expandedDays[day] && (
                             <div className="relative">
-                                <div className="absolute left-[14px] top-0 bottom-0 w-0.5 bg-green-600"></div>
+                                <div className="absolute left-[14px] top-0 bottom-0 w-0.5 bg-primaryGreen2"></div>
                                 
                                 {stops.map((stop, index) => (
                                     <div key={index} className="mb-6">
                                         {/* Location */}
                                         <div className="flex items-start gap-3">
                                             <div className="flex items-center gap-2">
-                                                <div className="h-6 w-6 rounded-full border-3 border-green-600 bg-white"></div>
+                                                <div className="h-6 w-6 rounded-full border-3 border-primaryGreen2 bg-white"></div>
                                                 <span className="text-sm text-gray-600 whitespace-nowrap">{stop.time}</span>
                                             </div>
                                             <div className="flex-1">
@@ -122,16 +124,11 @@ function SummaryItineraryPage() {
             </div>
 
             {/* Bottom Buttons - unchanged */}
-            <div className="p-4 flex gap-4 border-t">
-                <button className="flex-1 px-4 py-2 border border-green-600 rounded-lg text-green-600"
-                onClick={handleEditClick}
-                >
-                    Edit
-                </button>
-                <button className="flex-1 px-4 py-2 bg-green-600 text-white rounded-lg">
-                    Save
-                </button>
+            <div className="fixed bottom-4 w-96 flex justify-between">
+                <BackButton text="Edit" onClick={handleEditClick} />
+                <PrimaryButton text="Save" onClick={()=>{}} />
             </div>
+       
         </div>
         </div>
     );

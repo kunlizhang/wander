@@ -30,8 +30,8 @@ function TripInitPage() {
                 <CustomWants />
             </div>
             <div className="fixed bottom-4 w-96 flex justify-between">
-                <BackButton text="Back" onClick={handleBack} width="32" height="12" />
-                <PrimaryButton text="Generate Itinerary!" onClick={handleGenerate} width="48" height="12" />
+                <BackButton text="Back" onClick={handleBack} />
+                <PrimaryButton text="Generate Itinerary!" onClick={handleGenerate} />
             </div>
         </div>
   );

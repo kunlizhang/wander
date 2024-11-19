@@ -34,8 +34,8 @@ function TripInitPage() {
                 <CheckableGrid items={transportModes} />
             </div>
             <div className="fixed bottom-4 w-96 flex justify-between">
-                <BackButton text="Back" onClick={handleBack} width="32" height="12" />
-                <PrimaryButton text="Next" onClick={handleNext} width="32" height="12" />
+                <BackButton text="Back" onClick={handleBack} />
+                <PrimaryButton text="Next" onClick={handleNext} />
             </div>
         </div>
   );
