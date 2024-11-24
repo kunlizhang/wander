@@ -24,6 +24,7 @@ function GeneratedItinerariesPage() {
                     <div className="text-4xl font-bold mb-12">Seattle</div>
                     <SwipeCarouselIndicator barCount={seattleItinerary.length} brightCount={currentIndex}/>
                     <div className="mt-12"></div>
+
                     <div className="flex justify-center">
                         <button 
                             onClick={handleEditClick}
@@ -42,7 +43,8 @@ function GeneratedItinerariesPage() {
                                     strokeWidth={2} 
                                     d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
                                 />
-                            </svg>
+                            </svg> 
+                            <span className="text-small font-medium">Edit</span>
                         </button>
                         <ItineraryDisplayCarousel items={seattleItinerary} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
                     </div>
