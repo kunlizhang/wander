@@ -28,6 +28,7 @@ function TripInitPage() {
                 <div className="text-2xl font-bold my-6">Where do you want to explore?</div>
                 <ClearableInput placeholder="Search for a city" />
                 <div className="text-2xl font-bold my-6">What is your budget?</div>
+                <div className="text-xl my-6">This is your budget for exploration, excluding accomondations and flights.</div>
                 <RangeSlider minValue="0" maxValue="1000"/>
                 <div className="text-2xl font-bold my-6">How would you like to get around?</div>
                 <div className="mt-4"></div>
