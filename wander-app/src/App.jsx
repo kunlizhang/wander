@@ -14,9 +14,9 @@ function App() {
     <>
     <Router>
         <Routes>
-          <Route path="/" element={<WelcomePage/>} />
+          <Route path="/" element={<TripInitPage/>} />
           <Route path="/example" element={<ExamplePage/>} />
-          <Route path="/trip" element={<TripInitPage/>} />
+          <Route path="/trip" element={<WelcomePage/>} />
           <Route path="/tripPlan" element={<TripSpecificsPage/>} />
           <Route path="/generated" element={<GeneratedItinerariesPage/>} />
           <Route path="/walkthrough" element={<ItineraryWalkthroughPage/>} />

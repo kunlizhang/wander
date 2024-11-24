@@ -5,21 +5,15 @@ import CategoryGrid from "../components/CategoryGrid";
 import { useNavigate } from "react-router-dom"; 
 import categories from "../backend/categories.json";
 import OtherButton from "../components/OtherButton";
-import BackButton from "../components/BackButton";
+
 function WelcomePage() {
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate("/tripPlan");
+        navigate("/trip");
     }
-
-    const handleBack = () => {
-            navigate("/");
-    }
-    
     return (
         <div className="flex justify-center w-full h-full">
             <div className="w-96">
-                <div className="mt-20"></div>
                 <div className="text-4xl font-bold mb-12">Hi Jimmy!</div>
                 <ProgressBar brightCount={1} />
                 <div className="text-2xl font-bold mt-6">What do you enjoy doing?</div>
@@ -27,9 +21,8 @@ function WelcomePage() {
                 <CategoryGrid categories={categories} />
                 <div className="mt-4"></div>
             </div>
-            <div className="fixed bottom-4 w-96 flex justify-between">
-                <BackButton text="Back" onClick={handleBack} />
-                <PrimaryButton text="Next" onClick={handleClick} />
+            <div className="fixed bottom-4 w-96 flex justify-center">
+                <PrimaryButton text="Next" onClick={handleClick} width="96" height="12" />
             </div>
         </div>
   );
