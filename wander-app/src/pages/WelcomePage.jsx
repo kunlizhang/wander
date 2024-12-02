@@ -1,29 +1,38 @@
 import React from "react";
 import ProgressBar from "../components/ProgressBar";
 import PrimaryButton from "../components/PrimaryButton";
-import CategoryGrid from "../components/CategoryGrid";
-import { useNavigate } from "react-router-dom"; 
-import categories from "../backend/categories.json";
-import OtherButton from "../components/OtherButton";
+import BackButton from "../components/BackButton";
+import { useNavigate } from "react-router-dom";
+import ClearableInput from "../components/ClearableInput";
+import RangeSlider from "../components/RangeSlider";
+import Checkable from "../components/Checkable";
+import transportModes from "../backend/transportation-options.json";
+import { Checkbox } from "@mui/material";
+import CheckableGrid from "../components/CheckableGrid";
 
 function WelcomePage() {
     const navigate = useNavigate();
-    const handleClick = () => {
+    const handleNext = () => {
         navigate("/trip");
     }
+
     return (
         <div className="flex justify-center w-full h-full">
             <div className="w-96">
                 <div className="mt-20"></div>
                 <div className="text-4xl font-bold mb-12">Hi Jimmy!</div>
                 <ProgressBar brightCount={1} />
-                <div className="text-2xl font-bold mt-6">What do you enjoy doing?</div>
+                <div className="text-2xl font-bold my-6">Where do you want to explore?</div>
+                <ClearableInput placeholder="Search for a city" />
+                <div className="text-2xl font-bold my-6">What is your budget?</div>
+                <div className="text-xl my-6">This is your budget for exploration, excluding accomondations and flights.</div>
+                <RangeSlider minValue="0" maxValue="1000"/>
+                <div className="text-2xl font-bold my-6">How would you like to get around?</div>
                 <div className="mt-4"></div>
-                <CategoryGrid categories={categories} />
-                <div className="mt-4"></div>
+                <CheckableGrid items={transportModes} />
             </div>
             <div className="fixed bottom-4 w-96 flex justify-end">
-                <PrimaryButton text="Next" onClick={handleClick} />
+                <PrimaryButton text="Next" onClick={handleNext} />
             </div>
         </div>
   );
