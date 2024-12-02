@@ -22,31 +22,33 @@ function GeneratedItinerariesPage() {
                 <div className="relative">
                     <div className="mt-20"></div>
                     <div className="text-4xl font-bold mb-12">Seattle</div>
-                    <SwipeCarouselIndicator barCount={seattleItinerary.length} brightCount={currentIndex}/>
-                    <div className="mt-12"></div>
-
-                    <div className="flex justify-center">
+                    <div className="flex flex-row justify-between items-center">
+                        <SwipeCarouselIndicator barCount={seattleItinerary.length} brightCount={currentIndex}/>
                         <button 
-                            onClick={handleEditClick}
-                            className="absolute top-4 right-4 z-10 p-2 bg-white rounded-full shadow-md"
-                        >
-                            <svg 
-                                xmlns="http://www.w3.org/2000/svg" 
-                                className="h-6 w-6" 
-                                fill="none" 
-                                viewBox="0 0 24 24" 
-                                stroke="currentColor"
+                                onClick={handleEditClick}
+                                className="flex flex-row items-center justify-center bg-white rounded-full shadow-md h-12 w-20"
                             >
-                                <path 
-                                    strokeLinecap="round" 
-                                    strokeLinejoin="round" 
-                                    strokeWidth={2} 
-                                    d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                                />
-                            </svg> 
-                            <span className="text-small font-medium">Edit</span>
-                        </button>
-                        <ItineraryDisplayCarousel items={seattleItinerary} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    className="h-8 w-8" 
+                                    fill="none" 
+                                    viewBox="0 0 24 24" 
+                                    stroke="currentColor"
+                                >
+                                    <path 
+                                        strokeLinecap="round" 
+                                        strokeLinejoin="round" 
+                                        strokeWidth={2} 
+                                        d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                                    />
+                                </svg> 
+                                <span className="text-md font-semibold">Edit</span>
+                            </button>
+                        
+                    </div>
+                    <div className="mt-12"></div>
+                    <div className="flex justify-center">
+                        <ItineraryDisplayCarousel items={seattleItinerary} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/> 
                     </div>
                     <div className="mt-4"></div>
                     <div className="fixed bottom-4 w-96 flex justify-between">
