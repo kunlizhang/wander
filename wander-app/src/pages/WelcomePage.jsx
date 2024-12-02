@@ -21,7 +21,7 @@ function WelcomePage() {
             <div className="w-96">
                 <div className="mt-20"></div>
                 <div className="text-4xl font-bold mb-12">Hi Jimmy!</div>
-                <ProgressBar brightCount={1} />
+                <ProgressBar brightCount={0} />
                 <div className="text-2xl font-bold mt-6">What do you enjoy doing?</div>
                 <div className="mt-4"></div>
                 <CategoryGrid categories={categories} />
