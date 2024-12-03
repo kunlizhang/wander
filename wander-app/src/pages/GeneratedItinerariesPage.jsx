@@ -1,6 +1,7 @@
 import React from "react";
 import SwipeCarouselIndicator from "../components/SwipeCarouselIndicator";
 import TelegramIcon from '@mui/icons-material/Telegram';
+import EditIcon from '@mui/icons-material/Edit';
 import ItineraryDisplayCarousel from "../components/ItineraryDisplayCarousel";
 import seattleItinerary from "../backend/seattleItineraries.json";
 import { useNavigate } from "react-router-dom";
@@ -26,23 +27,9 @@ function GeneratedItinerariesPage() {
                         <SwipeCarouselIndicator barCount={seattleItinerary.length} brightCount={currentIndex}/>
                         <button 
                                 onClick={handleEditClick}
-                                className="flex flex-row items-center justify-center bg-white rounded-full shadow-md h-12 w-20"
+                                className="flex flex-row items-center justify-center bg-white rounded-full shadow-md h-12 w-12"
                             >
-                                <svg 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    className="h-8 w-8" 
-                                    fill="none" 
-                                    viewBox="0 0 24 24" 
-                                    stroke="currentColor"
-                                >
-                                    <path 
-                                        strokeLinecap="round" 
-                                        strokeLinejoin="round" 
-                                        strokeWidth={2} 
-                                        d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                                    />
-                                </svg> 
-                                <span className="text-md font-semibold">Edit</span>
+                                <EditIcon className="text-primaryGreen2"/>
                             </button>
                         
                     </div>

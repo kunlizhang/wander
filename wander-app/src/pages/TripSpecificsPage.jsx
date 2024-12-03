@@ -5,6 +5,8 @@ import BackButton from "../components/BackButton";
 import { useNavigate } from "react-router-dom";
 import DateTimePicker from "../components/DateTimePicker";
 import CustomWants from "../components/CustomWants";
+import CheckableGrid from "../components/CheckableGrid";
+import transportModes from "../backend/transportation-options.json";
 
 function TripInitPage() {
     const navigate = useNavigate();
@@ -26,6 +28,9 @@ function TripInitPage() {
                 <DateTimePicker dateRequired={true} timeRequired={false} defaultDate="2024-12-07" defaultTime="08:00"/>
                 <div className="text-md mt-2">To</div>
                 <DateTimePicker dateRequired={true} timeRequired={false} defaultDate="2024-12-07" defaultTime="18:00"/>
+                <div className="text-2xl font-bold my-6">How would you like to get around?</div>
+                <div className="mt-4"></div>
+                <CheckableGrid items={transportModes} />
             </div>
             <div className="fixed bottom-4 w-96 flex justify-between">
                 <BackButton text="Back" onClick={handleBack} />

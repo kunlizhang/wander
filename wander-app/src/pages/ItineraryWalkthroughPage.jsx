@@ -75,7 +75,7 @@ function ItineraryWalkthroughPage() {
                             )}
                             {/* Next button */}
                             <button 
-                                className={`bg-green-600 rounded-full p-3 ${
+                                className={`bg-primaryGreen2 rounded-full p-3 ${
                                     currentIndex === tourStops.length - 1 ? 'opacity-50' : ''
                                 }`}
                                 onClick={handleNext}
