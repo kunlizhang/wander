@@ -1,24 +1,41 @@
 import React, { useState } from 'react';
 
-function RangeSlider({ minValue, maxValue}) {
+function RangeSlider({ minValue, maxValue }) {
   const [value, setValue] = useState(50); // Initial value for the slider
 
-  const handleChange = (event) => {
+  const handleSliderChange = (event) => {
     setValue(event.target.value);
+  };
+
+  const handleInputChange = (event) => {
+    // Ensure the entered value stays within bounds
+    const newValue = Math.max(minValue, Math.min(maxValue, Number(event.target.value)));
+    // Set input value to the number
+    event.target.value = newValue;
+    setValue(newValue);
   };
 
   return (
     <div className="w-full">
-      <div className="mb-2 text-xl font-bold">${value} per day</div>
+      <div className="mb-2 text-xl font-bold">
+        <span>$ </span>
+        <input
+          type="number"
+          value={value}
+          onChange={handleInputChange}
+          className="w-24 text-center border rounded px-2"
+        />
+        <span> per day</span>
+      </div>
       <input
         type="range"
         min={minValue}
         max={maxValue}
         value={value}
-        onChange={handleChange}
+        onChange={handleSliderChange}
         className="slider w-full h-2 appearance-none bg-gray-300 rounded-lg"
         style={{
-          background: `linear-gradient(to right, #325D59 ${value/maxValue*100}%, #e5e7eb ${value/maxValue*100}%)`,
+          background: `linear-gradient(to right, #325D59 ${(value / maxValue) * 100}%, #e5e7eb ${(value / maxValue) * 100}%)`,
         }}
       />
       <style jsx>{`
@@ -70,6 +87,6 @@ function RangeSlider({ minValue, maxValue}) {
       `}</style>
     </div>
   );
-};
+}
 
 export default RangeSlider;
