@@ -26,8 +26,6 @@ function TripInitPage() {
                 <DateTimePicker dateRequired={true} timeRequired={false} defaultTime="08:00"/>
                 <div className="text-md mt-2">To</div>
                 <DateTimePicker dateRequired={true} timeRequired={false} defaultTime="18:00"/>
-                <div className="text-2xl font-bold my-4">What do you want to do?</div>
-                <CustomWants />
             </div>
             <div className="fixed bottom-4 w-96 flex justify-between">
                 <BackButton text="Back" onClick={handleBack} />
