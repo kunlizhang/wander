@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-const DateTimePicker = ({ dateRequired = false, timeRequired = false, defaultTime = '' }) => {
-  const [date, setDate] = useState('');
+const DateTimePicker = ({ dateRequired = false, timeRequired = false, defaultDate = '', defaultTime = '' }) => {
+  const [date, setDate] = useState(defaultDate);
   const [time, setTime] = useState(defaultTime);
 
   // Set default time when component mounts
   useEffect(() => {
     setTime(defaultTime);
+    setDate(defaultDate);
   }, [defaultTime]);
 
   return (

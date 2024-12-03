@@ -23,9 +23,9 @@ function TripInitPage() {
                 <ProgressBar brightCount={3} />
                 <div className="text-2xl font-bold my-6">How long will you be in Seattle?</div>
                 <div className="text-md">From</div>
-                <DateTimePicker dateRequired={true} timeRequired={false} defaultTime="08:00"/>
+                <DateTimePicker dateRequired={true} timeRequired={false} defaultDate="2024-12-07" defaultTime="08:00"/>
                 <div className="text-md mt-2">To</div>
-                <DateTimePicker dateRequired={true} timeRequired={false} defaultTime="18:00"/>
+                <DateTimePicker dateRequired={true} timeRequired={false} defaultDate="2024-12-07" defaultTime="18:00"/>
             </div>
             <div className="fixed bottom-4 w-96 flex justify-between">
                 <BackButton text="Back" onClick={handleBack} />
